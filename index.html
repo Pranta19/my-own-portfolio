@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranta Dhar | AI Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-glow"></div>
+
+    <nav>
+        <div class="logo">PRANTA.AI</div>
+        <ul class="nav-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header id="hero">
+    <div class="container hero-layout reveal active">
+        <div class="hero-text">
+            <span class="badge">AI Engineer & Researcher</span>
+            <h1>Pranta Dhar</h1>
+            <p class="hero-desc">Building intelligent systems that transform data into real-world solutions. Specialized in  <strong>Machine
+                 Learning</strong>, <strong>Deep Learning</strong>, <strong>Computer Vision</strong>, and <strong>Signal Processing</strong>.</p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn btn-primary">Explore Projects</a>
+                <a href="#" class="btn btn-secondary">Download CV</a>
+            </div>
+        </div>
+
+        <div class="hero-image-container">
+    <div class="image-frame">
+        <img src="Pranta.jpeg" alt="Pranta Dhar" class="hero-pic">
+    </div>
+</div>
+
+    </div>
+</header>
+    <main class="container">
+        <section id="about" class="section-padding reveal">
+            <h2 class="section-title">Professional Bio</h2>
+            <div class="bio-content">
+                <p>I architect end-to-end AI systems with a focus on high-precision medical diagnostics and autonomous vision. My approach combines rigorous signal processing techniques with modern deep learning architectures to solve complex, non-linear problems.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section-padding reveal">
+            <h2 class="section-title">Technical Core</h2>
+            <div class="skill-grid">
+                <div class="skill-card">
+                    <h3>AI & ML</h3>
+                    <ul>
+                        <li>PyTorch / TensorFlow</li>
+                        <li>Transformers & LLMs</li>
+                        <li>Reinforcement Learning</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Computer Vision</h3>
+                    <ul>
+                        <li>YOLOv8 / Segmentation</li>
+                        <li>Image Restoration</li>
+                        <li>Pose Estimation</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Signal Processing</h3>
+                    <ul>
+                        <li>ECG/EEG Feature Extraction</li>
+                        <li>Wavelet Transforms</li>
+                        <li>Noise Reduction</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section-padding reveal">
+            <h2 class="section-title">Impactful Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-tags">
+                        <span>Machine Learning</span>
+                        <span>Healthcare</span>
+                    </div>
+                    <h3>XAI-Driven Heterogeneous Ensemble Framework
+for Early Heart Failure Detection: Balancing
+Accuracy with Clinical Transparency</h3>
+                    <p>Developed an explainable AI framework combining heterogeneous ensemble models to detect early heart failure with high accuracy and clinical interpretability.</p>
+                    <div class="project-result">Accuracy: 93.4% on a kaggel
+ dataset</div>
+                    <a href="finalyy-paper.pdf" >View paper →</a>
+                </div>
+                 <div class="project-card">
+                    <div class="project-tags">
+                        <span>Machine Learning</span>
+                        <span>Healthcare</span>
+                    </div>
+                    <h3>Ensemble Machine Learning Models for Multi
+Target Nanoparticle Cytotoxicity Prediction</h3>
+                    <p>Developed ensemble models combining Random Forest, XGBoost, and SVM to predict cytotoxicity of nanoparticles with high accuracy.</p>
+                    <div class="project-result">Accuracy: 94% ona 
+curated dataset</div>
+                    <a href="Ensemble Machine Learning Models for Multi-Target.pdf" >View paper →</a>
+                </div>
+                </div>
+        </section>
+    </main>
+
+    
+        </div>
+    </footer>
+
+    <script>
+        // Smooth reveal logic
+        window.addEventListener('scroll', () => {
+            const reveals = document.querySelectorAll('.reveal');
+            reveals.forEach(el => {
+                const windowHeight = window.innerHeight;
+                const elementTop = el.getBoundingClientRect().top;
+                if (elementTop < windowHeight - 100) {
+                    el.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
